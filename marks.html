@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semester Marks</title>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    background:#0f0f0f;
+    color:white;
+    padding:20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    color:#00ffd5;
+}
+
+button{
+    margin:5px;
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#00ffd5;
+    color:black;
+    font-weight:bold;
+}
+
+button:hover{
+    opacity:0.8;
+}
+
+.semester{
+    display:none;
+    margin-top:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+}
+
+th,td{
+    border:1px solid #777;
+    padding:8px;
+}
+
+th{
+    background:#00ffd5;
+    color:black;
+}
+
+.cgpa{
+    margin-top:30px;
+    text-align:center;
+}
+
+.cgpa h2{
+    color:#00ffd5;
+}
+
+a{
+    color:#00ffd5;
+    text-decoration:none;
+}
+
+</style>
+
+<script>
+function showSemester(id){
+
+document.querySelectorAll('.semester')
+.forEach(x=>x.style.display='none');
+
+document.getElementById(id).style.display='block';
+
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📄 Semester Marks</h1>
+
+<button onclick="showSemester('sem1')">Semester 1</button>
+<button onclick="showSemester('sem2')">Semester 2</button>
+<button onclick="showSemester('sem3')">Semester 3</button>
+<button onclick="showSemester('sem4')">Semester 4</button>
+<button onclick="showSemester('sem5')">Semester 5</button>
+<button onclick="showSemester('sem6')">Semester 6</button>
+<button onclick="showSemester('sem7')">Semester 7</button>
+<button onclick="showSemester('sem8')">Semester 8</button>
+
+<!-- SEM 1 -->
+
+<div id="sem1" class="semester" style="display:block">
+
+<h2>Semester 1</h2>
+
+<table>
+
+<tr>
+<th>Code</th>
+<th>Subject</th>
+<th>Credit</th>
+<th>Grade</th>
+<th>GP</th>
+</tr>
+
+<tr><td>20HS101</td><td>English for Technical Communication</td><td>3.00</td><td>B+</td><td>7.00</td></tr>
+<tr><td>20BS101</td><td>Fundamentals of Engineering Mathematics</td><td>4.00</td><td>A</td><td>8.00</td></tr>
+<tr><td>20BS102</td><td>Engineering Physics</td><td>3.00</td><td>A</td><td>8.00</td></tr>
+<tr><td>20BS103</td><td>Engineering Chemistry</td><td>3.00</td><td>A</td><td>8.00</td></tr>
+<tr><td>20GE101</td><td>Problem Solving Using Python Programming</td><td>3.00</td><td>A</td><td>8.00</td></tr>
+<tr><td>20BS1L1</td><td>Basic Science Laboratory</td><td>1.50</td><td>O</td><td>10.00</td></tr>
+<tr><td>20GE1L1</td><td>Python Programming Laboratory</td><td>2.00</td><td>A+</td><td>9.00</td></tr>
+<tr><td>20GE1L2</td><td>Industrial Practices Workshop</td><td>1.50</td><td>O</td><td>10.00</td></tr>
+<tr><td>20HST01</td><td>Heritage of Tamils</td><td>0.00</td><td>A</td><td>Pass</td></tr>
+
+</table>
+
+</div>
+
+<!-- SEM 2 -->
+
+<div id="sem2" class="semester">
+
+<h2>Semester 2</h2>
+
+<table>
+
+<tr>
+<th>Code</th>
+<th>Subject</th>
+<th>Credit</th>
+<th>Grade</th>
+<th>GP</th>
+</tr>
+
+<tr><td>20HS201</td><td>Advanced Technical Communication</td><td>3.00</td><td>A</td><td>8.00</td></tr>
+<tr><td>20BS201</td><td>Laplace Transform and Advanced Calculus</td><td>4.00</td><td>A</td><td>8.00</td></tr>
+<tr><td>20BS203</td><td>Physics for Electronics Engineering</td><td>3.00</td><td>A+</td><td>9.00</td></tr>
+<tr><td>20EC201</td><td>Network Analysis</td><td>4.00</td><td>A</td><td>8.00</td></tr>
+<tr><td>20GE204</td><td>Basic Electrical Engineering and Electron Devices</td><td>3.00</td><td>A</td><td>8.00</td></tr>
+<tr><td>20GE2L2</td><td>Unix and Shell Scripting Laboratory</td><td>2.00</td><td>A+</td><td>9.00</td></tr>
+<tr><td>20EC2L1</td><td>Circuits and Devices Laboratory</td><td>2.00</td><td>O</td><td>10.00</td></tr>
+<tr><td>20GE206</td><td>Engineering Graphics</td><td>3.00</td><td>A</td><td>8.00</td></tr>
+<tr><td>20HST02</td><td>Tamils and Technology</td><td>0.00</td><td>A</td><td>Pass</td></tr>
+
+</table>
+
+</div>
+
+<!-- SEM 3 -->
+
+<div id="sem3" class="semester">
+
+<h2>Semester 3</h2>
+
+<table>
+
+<tr><th>Code</th><th>Subject</th><th>Credit</th><th>Grade</th><th>GP</th></tr>
+
+<tr><td>20HS301</td><td>Universal Human Values</td><td>3.00</td><td>A</td><td>8.00</td></tr>
+<tr><td>20BS302</td><td>Linear Algebra and Partial Differential Equations</td><td>4.00</td><td>A+</td><td>9.00</td></tr>
+<tr><td>20EC301</td><td>Analog Circuits</td><td>3.00</td><td>O</td><td>10.00</td></tr>
+<tr><td>20EC302</td><td>Signals and Systems</td><td>3.00</td><td>A</td><td>8.00</td></tr>
+<tr><td>20EC303</td><td>Digital System Design</td><td>4.00</td><td>A+</td><td>9.00</td></tr>
+<tr><td>20CS303</td><td>Object Oriented Programming and Data Structures</td><td>4.00</td><td>A+</td><td>9.00</td></tr>
+<tr><td>20EC3L1</td><td>Analog Circuits Laboratory</td><td>1.50</td><td>O</td><td>10.00</td></tr>
+<tr><td>20EC3L2</td><td>Digital System Design Laboratory</td><td>1.50</td><td>O</td><td>10.00</td></tr>
+
+</table>
+
+</div>
+
+<!-- SEM 4 -->
+
+<div id="sem4" class="semester">
+
+<h2>Semester 4</h2>
+
+<table>
+
+<tr><th>Code</th><th>Subject</th><th>Credit</th><th>Grade</th><th>GP</th></tr>
+
+<tr><td>20HS401</td><td>Environmental Science and Engineering</td><td>2.00</td><td>A</td><td>8.00</td></tr>
+<tr><td>20EC401</td><td>Random Process and Information Theory</td><td>3.00</td><td>A+</td><td>9.00</td></tr>
+<tr><td>20EC402</td><td>Computer Architecture and Organization</td><td>3.00</td><td>A</td><td>8.00</td></tr>
+<tr><td>20EC403</td><td>Electromagnetic Fields</td><td>4.00</td><td>A+</td><td>9.00</td></tr>
+<tr><td>20EC404</td><td>Analog Electronics and Integrated Circuits</td><td>3.00</td><td>A+</td><td>9.00</td></tr>
+<tr><td>20EC405</td><td>Principles of Digital Signal Processing</td><td>4.00</td><td>A</td><td>8.00</td></tr>
+<tr><td>20EC4L1</td><td>Analog Integrated Circuits Laboratory</td><td>1.50</td><td>O</td><td>10.00</td></tr>
+<tr><td>20HS4L1</td><td>Professional Communication and Technical Presentation</td><td>1.50</td><td>O</td><td>10.00</td></tr>
+
+</table>
+
+</div>
+
+<!-- SEM 5 -->
+
+<div id="sem5" class="semester">
+
+<h2>Semester 5</h2>
+
+<table>
+
+<tr><th>Code</th><th>Subject</th><th>Credit</th><th>Grade</th><th>GP</th></tr>
+
+<tr><td>20MC501</td><td>Constitution of India</td><td>0.00</td><td>Pass</td><td>-</td></tr>
+<tr><td>20EC5L1</td><td>Communication Systems Laboratory</td><td>1.50</td><td>A+</td><td>9.00</td></tr>
+<tr><td>20EC505</td><td>Digital VLSI Design and FPGA Implementation</td><td>4.00</td><td>A</td><td>8.00</td></tr>
+<tr><td>20HS6A1</td><td>Intellectual Property Rights</td><td>3.00</td><td>A</td><td>8.00</td></tr>
+<tr><td>20EC508</td><td>Control System Engineering</td><td>4.00</td><td>O</td><td>10.00</td></tr>
+<tr><td>20EC509</td><td>Transmission Lines and Waveguides</td><td>4.00</td><td>O</td><td>10.00</td></tr>
+<tr><td>20EC510</td><td>Analog and Digital Communication Techniques</td><td>4.00</td><td>O</td><td>10.00</td></tr>
+<tr><td>20EC511</td><td>Microprocessor and Microcontroller Based Systems</td><td>3.00</td><td>A+</td><td>9.00</td></tr>
+<tr><td>20EC5L4</td><td>Microprocessor and Microcontroller Based Systems Laboratory</td><td>1.50</td><td>A+</td><td>9.00</td></tr>
+
+</table>
+
+</div>
+
+<!-- SEM 6 -->
+
+<div id="sem6" class="semester">
+<h2>Semester 6</h2>
+<h3>Results Not Available</h3>
+</div>
+
+<!-- SEM 7 -->
+
+<div id="sem7" class="semester">
+
+<h2>Semester 7</h2>
+
+<table>
+
+<tr><th>Code</th><th>Subject</th><th>Credit</th><th>Grade</th><th>GP</th></tr>
+
+<tr><td>NOC24-CS115</td><td>Introduction to Internet of Things</td><td>3.00</td><td>A+</td><td>9.00</td></tr>
+<tr><td>NOC25-CS43</td><td>Introduction to Industry 4.0 and Industrial Internet of Things</td><td>3.00</td><td>O</td><td>10.00</td></tr>
+
+</table>
+
+</div>
+
+<!-- SEM 8 -->
+
+<div id="sem8" class="semester">
+<h2>Semester 8</h2>
+<h3>Results Not Available</h3>
+</div>
+
+<div class="cgpa">
+
+<h2>CGPA : 8.76</h2>
+
+<p>Sum of (CP × GP) : 1069.00</p>
+
+<p>Sum of Credits : 122.00</p>
+
+<br>
+
+<a href="degree.html">⬅ Back to Dashboard</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

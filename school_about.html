@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About School Days</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#0f0f0f,#1c1c1c);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    max-width:900px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:20px;
+    padding:30px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 25px rgba(0,212,255,0.15);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#aaa;
+    margin-bottom:25px;
+}
+
+/* paragraph */
+p{
+    line-height:1.8;
+    color:#ddd;
+    text-align:justify;
+}
+
+/* highlight cards */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    margin-top:25px;
+}
+
+.card{
+    background:#1b1b1b;
+    padding:15px;
+    border-radius:12px;
+    text-align:center;
+    border:1px solid transparent;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#00d4ff;
+    color:#00d4ff;
+}
+
+/* back button */
+.back{
+    display:block;
+    margin-top:25px;
+    text-align:center;
+    color:#00d4ff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.back:hover{
+    text-decoration:underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🏫 About My School Days</h1>
+    <p class="subtitle">Memories, Activities & Achievements</p>
+
+    <p>
+        During my school days, I actively participated in various extracurricular activities such as dance, karate, silambam, and especially yoga, where I won certificates. I also received appreciation for my handwriting, which was admired by everyone. In addition, I participated in several essay competitions and earned certificates for my writing skills. These experiences helped me build confidence, discipline, creativity, and communication skills.
+    </p>
+
+    <div class="cards">
+        <div class="card">💃 Dance</div>
+        <div class="card">🥋 Karate</div>
+        <div class="card">🥋 Silambam</div>
+        <div class="card">🧘 Yoga (Award Winner)</div>
+        <div class="card">✍ Handwriting Excellence</div>
+        <div class="card">📝 Essay Competitions</div>
+    </div>
+
+    <a href="schooling.html" class="back">⬅ Back to Dashboard</a>
+
+</div>
+
+</body>
+</html>

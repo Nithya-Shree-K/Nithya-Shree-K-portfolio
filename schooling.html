@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Info</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#0f0f0f,#1c1c1c);
+    color:white;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    text-align:center;
+}
+
+h1{
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+.cards{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:260px;
+    height:150px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:15px;
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    backdrop-filter:blur(10px);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#00d4ff;
+    color:#00d4ff;
+    box-shadow:0 0 20px rgba(0,212,255,0.3);
+}
+
+.back{
+    display:inline-block;
+    margin-top:40px;
+    color:#00d4ff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+@media(max-width:600px){
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🏫 My School Journey</h1>
+
+    <div class="cards">
+
+        <a href="school_about.html" class="card">
+            👩‍🎓 About School Days
+        </a>
+
+        <a href="marksschool.html" class="card">
+            🎓 Academics
+        </a>
+        <a href="certificationsch.html" class="card">
+            🏆 Certifications
+        </a>
+
+    </div>
+
+    <a href="index.html" class="back">⬅ Back to Home</a>
+
+</div>
+
+</body>
+</html>

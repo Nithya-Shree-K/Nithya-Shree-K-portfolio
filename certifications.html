@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Certifications</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#0f0f0f,#1c1c1c);
+    color:white;
+    padding:40px 20px;
+}
+
+/* container */
+.container{
+    max-width:1000px;
+    margin:auto;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:20px;
+    padding:30px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 25px rgba(0,212,255,0.15);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#aaa;
+    margin-bottom:30px;
+}
+
+/* GRID (2 x 3 style auto responsive) */
+.certificates{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+/* CARD */
+.card{
+    background:#1b1b1b;
+    border-radius:15px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#00d4ff;
+}
+
+/* IMAGE */
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:contain;
+    background:white;
+    padding:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card img:hover{
+    transform:scale(1.03);
+}
+
+/* TEXT */
+.content{
+    padding:15px;
+}
+
+.content h2{
+    color:#00d4ff;
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.content p{
+    color:#ccc;
+    line-height:1.5;
+    font-size:14px;
+}
+
+/* BACK */
+.back{
+    display:block;
+    text-align:center;
+    margin-top:30px;
+    color:#00d4ff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.back:hover{
+    text-decoration:underline;
+}
+
+/* POPUP */
+.modal{
+    display:none;
+    position:fixed;
+    z-index:9999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.95);
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    max-width:90%;
+    max-height:90%;
+    border-radius:10px;
+    border:2px solid white;
+}
+
+/* CLOSE BUTTON */
+.close{
+    position:absolute;
+    top:20px;
+    right:30px;
+    font-size:40px;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.close:hover{
+    color:#00d4ff;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .certificates{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🏆 My Certifications</h1>
+<p class="subtitle">Certificates, Courses & Achievements</p>
+
+<div class="certificates">
+
+    <div class="card">
+        <img src="kalvi.jpg" onclick="openImage(this.src)">
+        <div class="content">
+            <h2>Programming C, C++ & Java</h2>
+            <p>Completed training at Kalvi Institute, Madurai and gained programming fundamentals.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="python.jpg" onclick="openImage(this.src)">
+        <div class="content">
+            <h2>Python Using AI</h2>
+            <p>Completed AI-based Python workshop and learned programming concepts.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="streetlight.jpg" onclick="openImage(this.src)">
+        <div class="content">
+            <h2>Automatic Street Light Project</h2>
+            <p>Built using LDR and IR sensors for automatic light control.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="firede.jpg" onclick="openImage(this.src)">
+        <div class="content">
+            <h2>Fire Detection System</h2>
+            <p>Used flame and smoke sensors for safety alert system.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="hackathon.jpg" onclick="openImage(this.src)">
+        <div class="content">
+            <h2>PRE-SIH 2024 Hackathon</h2>
+            <p>Presented robotic hand idea in Smart India Hackathon.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="girls.jpg" onclick="openImage(this.src)">
+        <div class="content">
+            <h2>Job Readiness Program</h2>
+            <p>Completed training and received ₹1000 stipend.</p>
+        </div>
+    </div>
+
+</div>
+
+<a href="degree.html" class="back">⬅ Back to Dashboard</a>
+
+</div>
+
+<!-- POPUP -->
+<div id="imageModal" class="modal" onclick="closeImage()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="fullImage">
+</div>
+
+<script>
+function openImage(src){
+    document.getElementById("imageModal").style.display = "flex";
+    document.getElementById("fullImage").src = src;
+}
+
+function closeImage(){
+    document.getElementById("imageModal").style.display = "none";
+}
+</script>
+
+</body>
+</html>

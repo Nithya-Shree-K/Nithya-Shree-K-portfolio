@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academics</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#0f0f0f,#1c1c1c);
+    color:white;
+    display:flex;
+    justify-content:center;
+    padding:40px 20px;
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:20px;
+    padding:30px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 25px rgba(0,212,255,0.15);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.section{
+    margin-bottom:40px;
+}
+
+.section h2{
+    color:#00d4ff;
+    margin-bottom:10px;
+}
+
+.section p{
+    color:#ccc;
+    line-height:1.7;
+}
+
+/* image */
+.section img{
+    width:100%;
+    max-height:450px;
+    object-fit:contain;
+    margin-top:15px;
+    border-radius:12px;
+    border:1px solid #333;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.section img:hover{
+    transform:scale(1.02);
+}
+
+/* back */
+.back{
+    display:block;
+    text-align:center;
+    margin-top:20px;
+    color:#00d4ff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* LIGHTBOX */
+.lightbox{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+/* image */
+.lightbox img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:10px;
+    border:2px solid white;
+}
+
+/* X BUTTON */
+.close-btn{
+    position:absolute;
+    top:20px;
+    right:30px;
+    font-size:30px;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.close-btn:hover{
+    color:#00d4ff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📚 Academic Certificates</h1>
+
+    <div class="section">
+        <h2>SSLC</h2>
+        <p>
+            I completed my 10th standard from Alagumalar Matric Higher Secondary School, Manalur during the COVID-19 pandemic period when the Government declared an “All Pass” policy for students.
+        </p>
+
+        <img src="10th.jpg" onclick="openImage(this.src)" alt="10th Marks">
+    </div>
+
+    <div class="section">
+        <h2>Higher Secondary</h2>
+        <p>
+            I completed my 12th standard at Mahatma Montessori School, K.K. Nagar, Madurai. My school education gave me good exposure, helped me build confidence, and shaped my overall personality.
+        </p>
+
+        <img src="12th.png" onclick="openImage(this.src)" alt="12th Marks">
+    </div>
+
+    <a href="schooling.html" class="back">⬅ Back to Dashboard</a>
+
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+    <span class="close-btn" onclick="closeImage()">×</span>
+    <img id="lightbox-img">
+</div>
+
+<script>
+function openImage(src){
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-img").src = src;
+}
+
+function closeImage(){
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+</html>

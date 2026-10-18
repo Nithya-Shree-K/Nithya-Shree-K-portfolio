@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+
+<style>
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#0f0f0f,#1c1c1c);
+    color:white;
+    margin:0;
+    padding:20px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    background:#1b1b1b;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,255,255,0.15);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#aaa;
+    margin-bottom:25px;
+}
+
+/* Sections */
+.section{
+    margin-top:25px;
+}
+
+.section h2{
+    color:#00d4ff;
+    margin-bottom:10px;
+    border-left:4px solid #00d4ff;
+    padding-left:10px;
+}
+
+p{
+    line-height:1.7;
+    color:#ddd;
+}
+
+/* Skills */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#262626;
+    padding:8px 12px;
+    border-radius:20px;
+    border:1px solid #00d4ff;
+    font-size:14px;
+}
+
+/* Highlight cards */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+
+.card{
+    background:#222;
+    padding:15px;
+    border-radius:12px;
+    text-align:center;
+    transition:0.3s;
+    border:1px solid transparent;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#00d4ff;
+}
+
+/* Back button */
+.back{
+    display:inline-block;
+    margin-top:25px;
+    color:#00d4ff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.back:hover{
+    text-decoration:underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>👩‍💻 About Me</h1>
+    <p class="subtitle">ECE Student | Software Enthusiast | Developer</p>
+
+    <!-- PROFILE -->
+    <div class="section">
+        <h2>Profile</h2>
+        <p>
+            I am an Electronics and Communication Engineering (ECE) student with a strong interest in both hardware and software development. 
+            I enjoy working on embedded systems, electronics projects, and also developing software applications. 
+            I am passionate about combining electronics with programming to build innovative real-world solutions and continuously improving my technical skills.
+        </p>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">C Programming</div>
+            <div class="skill">C++</div>
+            <div class="skill">Java Basics</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Basic Python</div>
+            <div class="skill">Embedded Systems</div>
+            <div class="skill">Sensors</div>
+            <div class="skill">Basic Electronics</div>
+            <div class="skill">Problem Solving</div>
+            <div class="skill">Software Development Interest</div>
+            <div class="skill">Web Development Basics</div>
+        </div>
+    </div>
+
+    <!-- HIGHLIGHTS -->
+    <div class="section">
+        <h2>Highlights</h2>
+
+        <div class="cards">
+            <div class="card">⚡ Street Light Automation Project</div>
+            <div class="card">🔥 Fire Detection System</div>
+            <div class="card">🤖 Robotic Hand Idea (PRE-SIH 2024)</div>
+            <div class="card">💻 Software Development Interest</div>
+            <div class="card">🏆 Technical Certifications</div>
+            <div class="card">📡 Sensor-Based Projects</div>
+        </div>
+    </div>
+
+    <!-- CAREER OBJECTIVE -->
+    <div class="section">
+        <h2>Career Objective</h2>
+        <p>
+            To build a successful career in both Electronics and Software Development by applying my knowledge in
+            embedded systems, programming, and web technologies to develop innovative and efficient real-world solutions.
+        </p>
+    </div>
+
+    <a href="degree.html" class="back">⬅ Back to Dashboard</a>
+
+</div>
+
+</body>
+</html>
